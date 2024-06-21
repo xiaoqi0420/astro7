@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Dht from '../components/Navigation Bar.astro';
+
+const pageTitle = "首页";
+---
 ---
 
 <Layout title="Welcome to Astro.">
@@ -32,13 +36,11 @@ import Card from '../components/Card.astro';
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
 			</defs>
-		</svg>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">教学日志</a>
-		<a href="/notes/">笔记</a>
+		</svg> 
+		<Dht />
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<h2>P211012577 21级新闻学3班 王筱琪</h2>
+		<p>探索宇宙的奥秘，发现新的世界。</p>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -74,7 +76,7 @@ import Card from '../components/Card.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: rgb(6, 5, 6);
 		font-size: 20px;
 		line-height: 1.6;
 	}
@@ -125,4 +127,79 @@ import Card from '../components/Card.astro';
 		gap: 2rem;
 		padding: 0;
 	}
+
+    body {
+      background: linear-gradient(to bottom, #da6aaf, #602af5);
+    }
+
+    /* 导航条样式 */
+    .navbar {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      padding: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #9a4ef0; /* 鼠标悬浮时颜色为深粉紫色 */
+    }
+
+    /* 主内容区域 */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    /* 特色区块 */
+    .feature {
+      background: white;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .feature h2 {
+      color: #9a4ef0;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar li {
+        padding: 10px 0;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
 </style>
