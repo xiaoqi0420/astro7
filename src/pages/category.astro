@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国茶文化 - 茶之道</title>
+    <div id="banner">
+        <!-- 替换下面的src为你的图片链接 -->
+        <img src="http://www.chawh.net/images/tea_02.gif" alt="茶文化网横幅">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(#eef5c2, #d0f4d0);
+            line-height: 1.6;
+        }
+
+        #banner img { width: 100%; height: auto; }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .logo {
+            font-family: '楷体', cursive;
+            font-size: 48px;
+            color: #006400;
+        }
+
+        .navbar {
+            background: rgb(236, 244, 180);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        a:hover{
+			background: linear-gradient(#f5f5f4, #aee2fd);
+            color: #333;
+        }
+        .tea-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .tea-box {
+            border-radius: 15px;
+            padding: 20px;
+            background: radial-gradient(circle at center, #f0c1ec, #b0d9ef);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .tea-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .tea-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tea-list li {
+            font-size: 16px;
+            padding: 5px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .tea-list li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background: #f5f5dc; /* 页脚浅黄色背景 */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+    <div class="header">
+        <h1 class="logo">茶之道</h1>
+        <div class="navbar">
+            <a href="/" class="active">茶学首页</a>
+            <a href="/culture/">茶学文化</a>
+            <a href="/category/">茶叶分类</a>
+            <a href="/products/">茶叶产品</a>
+            <a href="/market/">茶市行情售卖</a>
+        </div>
+    </div>
+
+    <div class="tea-category">
+        <!-- 绿茶 -->
+        <div class="tea-box">
+            <h3>绿茶</h3>
+            <ul class="tea-list">
+                <li>龙井</li>
+                <li>碧螺春</li>
+                <li>黄山毛峰</li>
+                <li>太平猴魁</li>
+                <!-- 更多绿茶品种 -->
+            </ul>
+        </div>
+        <!-- 红茶 -->
+        <div class="tea-box">
+            <h3>红茶</h3>
+            <ul class="tea-list">
+                <li>正山小种</li>
+                <li>祁门红茶</li>
+                <li>滇红</li>
+                <!-- 更多红茶品种 -->
+            </ul>
+        </div>
+        <!-- 乌龙茶 -->
+        <div class="tea-box">
+            <h3>乌龙茶</h3>
+            <ul class="tea-list">
+                <li>铁观音</li>
+                <li>大红袍</li>
+                <li>凤凰单枞</li>
+                <!-- 更多乌龙茶品种 -->
+            </ul>
+        </div>
+        <!-- 白茶 -->
+        <div class="tea-box">
+            <h3>白茶</h3>
+            <ul class="tea-list">
+                <li>白毫银针</li>
+                <li>白牡丹</li>
+                <li>贡眉</li>
+                <!-- 更多白茶品种 -->
+            </ul>
+        </div>
+        <!-- 黄茶 -->
+        <div class="tea-box">
+            <h3>黄茶</h3>
+            <ul class="tea-list">
+                <li>君山银针</li>
+                <li>蒙顶黄芽</li>
+                <!-- 更多黄茶品种 -->
+            </ul>
+        </div>
+        <!-- 黑茶 -->
+        <div class="tea-box">
+            <h3>黑茶</h3>
+            <ul class="tea-list">
+                <li>普洱茶</li>
+                <li>六堡茶</li>
+                <li>安化黑茶</li>
+                <!-- 更多黑茶品种 -->
+            </ul>
+        </div>
+        <!-- 花茶 -->
+        <div class="tea-box">
+            <h3>花茶</h3>
+            <ul class="tea-list">
+                <li>茉莉花茶</li>
+                <li>桂花茶</li>
+                <li>玫瑰花茶</li>
+                <!-- 更多花茶品种 -->
+            </ul>
+        </div>
+        <!-- 其他 -->
+        <div class="tea-box">
+            <h3>其他</h3>
+            <ul class="tea-list">
+                <li>苦丁茶</li>
+                <li>绞股蓝茶</li>
+                <li>石斛茶</li>
+                <!-- 更多其他茶类 -->
+            </ul>
+        </div>
+        <!-- 根据需要继续添加其他茶类 -->
+    </div>
+    <div id="footer">
+        <p>版权所有 &copy; 2024 中国茶文化网</p>
+    </div>
+</body>
+</html>

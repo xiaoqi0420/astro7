@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="navbar">
+        <a href="/" class="active">茶学首页</a>
+        <a href="/culture/">茶学文化</a>
+        <a href="/category/">茶叶分类</a>
+        <a href="/products/">茶叶产品</a>
+        <a href="/market/">茶市行情售卖</a>
+    </div>
+    <title>茶叶售卖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f5e1, #fdebd0); /* 浅绿色和浅黄色渐变背景 */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .tea-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tea-item {
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .tea-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .tea-item h3 {
+            margin: 10px 0;
+        }
+
+        .tea-item p {
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .navbar {
+            background-color:rgb(236, 244, 180);/* 导航栏底纹和渐变背景 */
+            background-size: auto, cover; /* 底纹自动缩放，渐变背景全屏 */
+            background-position: center, center;
+            background-repeat: repeat, no-repeat;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        a:hover{
+			background: linear-gradient(#f5f5f4, #aee2fd);
+            color: #333;
+    </style>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶叶售卖</title>
+    <style>
+        /* CSS样式保持不变，参考之前的示例 */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>茶叶专卖店</h1>
+    </header>
+    <div class="container">
+        <section class="tea-list">
+            <!-- 茶叶项目示例 -->
+            <article class="tea-item">
+                <img src="https://img2.baidu.com/it/u=280460105,2066286134&fm=253&fmt=auto&app=120&f=JPEG?w=626&h=421" alt="绿茶">
+                <h3>绿茶 - 龙井</h3>
+                <p>简介：龙井茶，产自中国杭州，以其独特的扁平叶形和清新口感而闻名。含有丰富的抗氧化剂，有助于提神醒脑。</p>
+                <p>价格：￥150/100g</p>
+            </article>
+            <!-- 其他茶叶项目 -->
+            <article class="tea-item">
+                <img src="https://img0.baidu.com/it/u=1562358039,4293157266&fm=253&fmt=auto&app=138&f=JPEG?w=650&h=422" alt="红茶">
+                <h3>红茶 - 正山小种</h3>
+                <p>简介：正山小种，产自中国福建武夷山，是一种传统的红茶，以其独特的烟熏香气和醇厚口感而著称。</p>
+                <p>价格：￥200/100g</p>
+            </article>
+            <article class="tea-item">
+                <img src="https://img1.baidu.com/it/u=2257798098,877572164&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=422" alt="红茶">
+                <h3>乌龙茶 - 铁观音</h3>
+                <p>简介：铁观音，产自中国福建安溪，是一种半发酵茶，以其兰花香气和甘甜回味而受到喜爱。</p>
+                <p>价格：￥180/100g</p>
+            </article>
+            <article class="tea-item">
+                <img src="https://img0.baidu.com/it/u=554563932,3926157867&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500" alt="红茶">
+                <h3>白茶 - 白毫银针</h3>
+                <p>简介：白毫银针，创制于1796年，是中国六大茶类之一的白茶，原产地在福建，主要产区为福鼎、柘荣、政和、松溪、建阳等地，属有中国十大名茶的称号，素有茶中“美女”、“茶王”之美称。其外观特征挺直似针，满披白毫，如银似雪，成品茶长约3cm。</p>
+                <p>价格：￥298/100g</p>   
+            </article>
+            <article class="tea-item">
+                <img src="http://t14.baidu.com/it/u=187013764,432334603&fm=224&app=112&f=JPEG?w=500&h=375" alt="红茶">
+                <h3>黄茶 - 蒙顶黄芽</h3>
+                <p>简介：蒙顶黄芽，是芽形黄茶之一，产于四川省雅安市蒙顶山。蒙顶茶栽培始于西汉，距今已有二千年的历史，古时为贡品供历代皇帝享用。蒙顶黄芽外形扁直，芽条匀整，色泽嫩黄，芽毫显露，花香幽长，汤色黄亮透碧，滋味鲜醇回甘，叶底全芽嫩黄</p>
+                <p>价格：￥392.88/100g</p>      
+            </article>
+            <article class="tea-item">
+                <img src="https://img1.baidu.com/it/u=2953134852,3377726789&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=343" alt="红茶">
+                <h3>黑茶 - 普洱茶</h3>
+                <p>简介：普洱茶主产于云南省普洱市、临沧市、西双版纳傣族自治州等地区，大乔木，高达16米，嫩枝有微毛，顶芽有白柔毛。叶薄革质，椭圆形。花腋生，被柔毛。苞片2，早落。萼片5，近圆形，外面无毛。普洱茶讲究冲泡技巧和品饮艺术，可清饮，可混饮。普洱茶茶汤橙黄浓厚，香气高锐持久，香型独特，滋味浓醇，经久耐泡。</p>
+                <p>价格：￥149/100g</p>      
+        </section>    
+        </section>
+    </div>
+    <footer>
+        <p>版权所有 &copy; 2024 茶叶专卖店</p>
+    </footer>
+</body>
+</html>
